@@ -353,16 +353,8 @@ Listing X25519MLKEM768 in the `allowed` list is what asks for a post-quantum key
 
 The downstream walkthrough, client to Kroxylicious used a two-terminal layout. The left terminal shows the Kroxylicious configuration in use. The right terminal runs a tool that reports the named group negotiated when a TLS connection is made to the proxy.
 
-<video controls muted playsinline width="720" preload="metadata">
-  <source src="/assets/blog/videos/pqc-series/kroxy-downstream-pqc.mp4" type="video/mp4">
-  Your browser does not support the video element. The recording is at
-  <a href="/assets/blog/videos/pqc-series/kroxy-downstream-pqc.mp4">downstream-named-groups.mp4</a>.
-</video>
+<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/WvwZw478hlY" title="Kroxylicious Downstream PQC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 The upstream walkthrough, Kroxylicious to Kafka used a two-terminal layout. The left terminal shows the Kroxylicious configuration. The right terminal shows the named group negotiated with the upstream Kafka, obtained by turning on TLS tracing for Kroxylicious with `-Djavax.net.debug=SSL` and filtering for the negotiated group. A producer sending a single message drove the upstream connection.
 
-<video controls muted playsinline width="720" preload="metadata">
-  <source src="/assets/blog/videos/pqc-series/kroxy-upstream-pqc.mp4" type="video/mp4">
-  Your browser does not support the video element. The recording is at
-  <a href="/assets/blog/videos/pqc-series/kroxy-upstream-pqc.mp4">upstream-named-groups.mp4</a>.
-</video>
+<iframe width="720" height="405" src="https://www.youtube-nocookie.com/embed/mLXXbhgTEI4" title="Kroxylicious Upstream PQC" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
